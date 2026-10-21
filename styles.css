@@ -72,3 +72,6 @@ body{background:#191d1c}
   .feature-first .tall-media,.feature-second .screen-media,.feature-third .screen-media{height:640px}
   .feature-first .feature-copy-box{min-height:570px}
 }
+
+/* Compact engineering links beneath the SurvAtlas project button */
+.engineering-links{display:flex;flex-wrap:wrap;gap:9px 18px;margin-top:19px!important;font-size:12px!important;line-height:1.6!important}.engineering-links a{color:#c3d8d1;text-decoration:underline;text-decoration-color:#7e9a8c;text-underline-offset:4px}.engineering-links a:hover{color:#fff}

@@ -105,3 +105,33 @@ body{background:#191d1c}
 @media(max-width:800px){.how-heading{grid-template-columns:1fr}.how-footer{flex-direction:column;align-items:start}.architecture-side{display:none}}
 @media(max-width:620px){.how-section{padding:75px 0}.how-heading h2{font-size:77px}.architecture{padding:13px}.architecture-layer{padding:18px;gap:12px}.architecture-layer h3{font-size:19px}.architecture-services{grid-template-columns:1fr;gap:10px}.architecture-module{padding:20px}.architecture-connector{height:28px}.how-footer .action{white-space:normal}}
 @media(prefers-reduced-motion:reduce){.architecture-module{transition:none}}
+
+/* SurvAtlas technical showcase refinements */
+.how-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 5%,rgba(94,123,101,.13),transparent 42%),#171d1a;color:#f3f5f0}
+.how-section:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.13;background-image:linear-gradient(#a5b9a20b 1px,transparent 1px),linear-gradient(90deg,#a5b9a20b 1px,transparent 1px);background-size:54px 54px}
+.how-section>.content{position:relative;width:min(1340px,calc(100% - 88px));max-width:none}
+.how-heading{margin-bottom:60px}
+.how-heading h2{color:#f3f5f0;font-size:clamp(76px,9vw,148px);line-height:.88}
+.how-heading h2 span{color:#9cb7a4}
+.how-heading>p{font-size:17px;line-height:1.9}
+.architecture{position:relative;border:1px solid #405447;border-radius:5px;background:linear-gradient(150deg,#1d2821,#151c18);padding:42px;box-shadow:0 35px 100px #0005}
+.architecture:before,.architecture:after{content:"";position:absolute;width:20px;height:20px;border-color:#cf8975;pointer-events:none}
+.architecture:before{top:-1px;left:-1px;border-top:2px solid;border-left:2px solid}
+.architecture:after{bottom:-1px;right:-1px;border-bottom:2px solid;border-right:2px solid}
+.architecture-layer{min-height:116px;border:1px solid #526e5a;background:linear-gradient(110deg,#314639,#26362d);padding:30px 36px}
+.architecture-number{font-size:38px;min-width:58px}
+.architecture-layer h3{font-size:30px}
+.architecture-layer p{font-size:13px}
+.architecture-connector{height:58px}
+.architecture-connector span{border-left:2px dashed #799a82}
+.architecture-services{gap:18px}
+.architecture-module{position:relative;min-height:210px;background:linear-gradient(155deg,#304338,#26342c);border:1px solid #557361;padding:31px 28px}
+.architecture-module:before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:#b67e6b}
+.architecture-module>span{font-size:10px;color:#e6a48e}
+.architecture-module h3{font-size:clamp(24px,2.6vw,38px);line-height:1.12}
+.architecture-module p{font-size:13px;line-height:1.85}
+.architecture-base{background:linear-gradient(110deg,#273a2f,#202e26)}
+.how-footer{border-top:1px solid #3b4a40;margin-top:34px;padding-top:29px}
+.how-footer p{font-size:14px}
+@media(max-width:800px){.how-section>.content{width:calc(100% - 42px)}.architecture{padding:20px}.architecture-module{padding:22px 18px;min-height:190px}.architecture-module h3{font-size:23px}.architecture-layer{padding:20px}.architecture-layer h3{font-size:22px}}
+@media(max-width:620px){.how-heading h2{font-size:clamp(66px,16vw,100px)}.architecture-services{grid-template-columns:1fr}.architecture-module{min-height:0}.architecture{padding:14px}.architecture-layer{min-height:90px}.architecture-number{font-size:29px;min-width:32px}.how-heading>p{font-size:15px}}
